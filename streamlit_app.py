@@ -169,7 +169,7 @@ if page == "RECEIVE FORM":
 
                 # Use gspread to update the Google Sheets
                 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-                creds = ServiceAccountCredentials.from_json_keyfile_name("received-form-data-entry-6bd8d567df60.json", scope)
+                creds = ServiceAccountCredentials.from_json_keyfile_name("received-form-data-entry-f9b2d302cd23.json", scope)
                 client = gspread.authorize(creds)
                 sheet = client.open_by_url(f"https://docs.google.com/spreadsheets/d/{url}").sheet1
 
@@ -245,7 +245,7 @@ if page == "RELEASE FORM":
 
                 # Use gspread to update the Google Sheets
                 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-                creds = ServiceAccountCredentials.from_json_keyfile_name("released-form-data-entry-9e676d73c4bb.json", scope)
+                creds = ServiceAccountCredentials.from_json_keyfile_name("released-form-data-entry-2a049998a454.json", scope)
                 client = gspread.authorize(creds)
                 sheet = client.open_by_url(f"https://docs.google.com/spreadsheets/d/{url}").sheet1
 
@@ -267,7 +267,7 @@ if page == "RECEIVE PALLET POSITION":
 
     # Set up the credentials and client
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-receive-form-data-entry-92419bd45d86.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-receive-form-data-entry-2826624a6aaa.json", scope)
     client = gspread.authorize(creds)
 
     # Open the Google Sheets document by URL and select the 'LOCATOR' sheet
@@ -326,7 +326,7 @@ if page == "RECEIVE PALLET POSITION":
 
                 # Use gspread to update the Google Sheets
                 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-                creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-receive-form-data-entry-92419bd45d86.json", scope)
+                creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-receive-form-data-entry-2826624a6aaa.json", scope)
                 client = gspread.authorize(creds)
                 sheet = client.open_by_url(f"https://docs.google.com/spreadsheets/d/{url}").sheet1
 
@@ -348,7 +348,7 @@ if page == "RELEASE PALLET POSITION":
 
     # Set up the credentials and client
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-release-form-data-entry-3ee002e37920.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-release-form-data-entry-e08fb50994cd.json", scope)
     client = gspread.authorize(creds)
 
     # Open the Google Sheets document by URL and select the 'PALLET RELEASE' sheet
@@ -405,7 +405,7 @@ if page == "RELEASE PALLET POSITION":
 
                 # Use gspread to update the Google Sheets
                 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-                creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-release-form-data-entry-3ee002e37920.json", scope)
+                creds = ServiceAccountCredentials.from_json_keyfile_name("pallet-release-form-data-entry-e08fb50994cd.json", scope)
                 client = gspread.authorize(creds)
                 sheet = client.open_by_url(f"https://docs.google.com/spreadsheets/d/{url}").sheet1
 
